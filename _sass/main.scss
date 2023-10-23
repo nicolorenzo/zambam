@@ -5,25 +5,110 @@
 // You can easily customize Bulma with your own variables.
 // Just uncomment the following block to see the result.
 
-/*
 // 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import '../node_modules/bulma/sass/utilities/initial-variables';
 
 // 2. Set your own initial variables
 // Update the blue shade, used for links
-$blue: #06bcef;
+$yellow: #febb24;
 // Add pink and its invert
-$pink: #ff8080;
-$pink-invert: #fff;
+$orange: #fb692d;
+$purple: #671e54;
+$red: #fa2735;
+$coral: #b91d3d;
+$bege: #e7c797;
 // Update the sans-serif font family
-$family-sans-serif: "Helvetica", "Arial", sans-serif;
+$family-sans-serif: 'Darker Grotesque', 'Helvetica', 'Arial', sans-serif;
 
 // 3. Set the derived variables
-// Use the new pink as the primary color
-$primary: $pink;
-$primary-invert: $pink-invert;
-
+$primary: $orange;
+$body-background-color: $bege;
+$body-font-size: 2em;
+$body-line-height: 1.3;
+$section-padding-medium: 6rem 1.5rem;
 // 4. Import the rest of Bulma
-*/
 
-@import "../node_modules/bulma/bulma";
+@import '../node_modules/bulma/bulma';
+
+header {
+  background: url('../images/bg.svg') repeat-x center center;
+  background-size: auto 100%;
+}
+h1 {
+  font-size: 4em !important;
+  line-height: 70% !important;
+}
+h2 {
+  font-size: 2.4em !important;
+  line-height: 70% !important;
+}
+h3 {
+  font-size: 1.5em !important;
+}
+
+.profile-picture {
+  position: relative;
+}
+.profile-picture .wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: inherit;
+}
+
+#projetos {
+  background-color: $purple;
+}
+ul.accordion li {
+  border-bottom: 2px solid #ffffff;
+  margin-bottom: 1rem;
+}
+.accordion .content {
+  display: none;
+}
+.accordion .active .content {
+  display: block;
+}
+.accordion-bt {
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.accordion-icon {
+  width: 4rem !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+.accordion-icon .line {
+  width: 2rem !important;
+  border: 1px solid #ffffff;
+  position: absolute;
+  transition: all 0.5s ease;
+}
+.line.h {
+  transform: rotate(0deg);
+}
+.line.v {
+  transform: rotate(0deg);
+}
+.accordion-bt:hover {
+  background-color: #0000004f;
+}
+.accordion-bt:hover .accordion-icon,
+.active .accordion-bt .accordion-icon {
+  transform: rotate(180deg);
+}
+.accordion-bt:hover .accordion-icon .line.v,
+.active .accordion-bt .accordion-icon .line.v {
+  transform: rotate(90deg);
+}
+
+.border-shadow {
+  border: 2px #000000 solid;
+  box-shadow: 6px 6px #000000;
+}
+.button {
+  padding-top: calc(0.3em - 1px);
+}

@@ -1,210 +1,343 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>My first Bulma website</title>
-    <link rel="stylesheet" href="css/main.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>André Zambam - Roteirista</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
-    <section class="hero is-medium is-primary">
+    <header class="hero is-primary">
       <div class="hero-body">
         <div class="container">
-          <div class="columns">
-            <div class="column is-8-desktop is-offset-2-desktop">
-              <h1 class="title is-2 is-spaced">
-                Hello Bulma!
+          <div class="columns is-variable is-6">
+            <div class="column is-4 profile-picture">
+              <div class="wrapper">
+                <img
+                  class="border-shadow is-block"
+                  src="images\andre-zambam-roteirista.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+            <div class="column is-8">
+              <h1
+                class="title mb-3 mt-3 is-1 is-spaced is-uppercase has-text-weight-normal"
+              >
+                André<br />
+                <span class="has-text-weight-bold">Zambam</span>
               </h1>
-              <h2 class="subtitle is-4">
-                  Congratulations! You're running the <strong>Bulma start</strong> project.
-                  <br>
-                  It includes everything you need to <strong>build your own website</strong> with Bulma.
-              </h2>
+              <p class="title is-1 has-text-weight-light">Roteirista</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="section is-medium">
+      <div class="container">
+        <div class="columns">
+          <div class="column is-8 is-offset-4">
+            <p>
+              André Zambam é mestre em Comunicação na área audiovisual (UFRGS).
+              Foi premiado no <strong>1o Festival de Séries</strong> com o
+              <strong>Melhor Roteiro de Piloto Gaúcho (2022)</strong> e teve
+              <strong>menção honrosa no Lab 51 do WR (2023)</strong>. Desenvolve
+              as séries <strong>Rocheda</strong> com a <strong>Giros</strong>,
+              <strong>12/14</strong> com a <strong>Tambellini</strong> e
+              <strong>Próxima Parada</strong> com a
+              <strong>Primeiro Corte</strong>, além dos longas
+              <strong>Ana não escolhe lado</strong> com a
+              <strong>Elo Studios</strong> e
+              <strong
+                >Um treinador nada clássico (em co-autoria com Bárbara
+                Rafaela)</strong
+              >
+              com a <strong>Movioca</strong>, todos projetos autorais de
+              comédia. Participou de laboratórios e cursou dezenas de cursos de
+              roteiro e comédia no Brasil e fora, incluindo
+              <strong>Oficina de Séries (Roteiraria - 82h)</strong>.
+            </p>
+            <div class="field is-grouped">
+              <p class="control">
+                <a class="button is-medium is-primary" href="http://bulma.io">
+                  <strong class="has-text-weight-semibold"
+                    >Bulma homepage</strong
+                  >
+                </a>
+              </p>
+              <p class="control">
+                <a
+                  class="button is-medium is-link"
+                  href="http://bulma.io/documentation/overview/start/"
+                >
+                  <strong class="has-text-weight-semibold"
+                    >Documentation</strong
+                  >
+                </a>
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="section">
+    <section id="projetos" class="section is-medium has-text-white">
       <div class="container">
-        <div class="columns">
-          <div class="column is-8-desktop is-offset-2-desktop">
-            <div class="content">
-              <h3>What's included</h3>
-              <p>
-                The <code>npm</code> dependencies included in <code>package.json</code> are:
-              </p>
-              <ul>
-                <li>
-                  <code><a href="https://github.com/jgthms/bulma">bulma</a></code>
-                </li>
-                <li>
-                  <code><a href="https://github.com/sass/sass">sass</a></code> to compile your own Sass file
-                </li>
-                <li>
-                  <code><a href="https://github.com/postcss/postcss-cli">postcss-cli</a></code> and <code><a href="https://github.com/postcss/autoprefixer">autoprefixer</a></code> to add support for older browsers
-                </li>
-                <li>
-                  <code><a href="https://babeljs.io/docs/usage/cli/">babel-cli</a></code>,
-                  <code><a href="https://github.com/babel/babel-preset-env">babel-preset-env</a></code>
-                  and
-                  <code><a href="https://github.com/jmcriffey/babel-preset-es2015-ie">babel-preset-es2015-ie</a></code>
-                  for compiling ES6 JavaScript files
-                </li>
-              </ul>
-              <p>
-                Apart from <code>package.json</code>, the following files are included:
-              </p>
-              <ul>
-                <li>
-                  <code>.babelrc</code> configuration file for <a href="https://babeljs.io/">Babel</a>
-                </li>
-                <li>
-                  <code>.gitignore</code> common <a href="https://git-scm.com/">Git</a> ignored files
-                </li>
-                <li>
-                  <code>index.html</code> this HTML5 file
-                </li>
-                <li>
-                  <code>_sass/main.scss</code> a basic SCSS file that <strong>imports Bulma</strong> and explains how to <strong>customize</strong> your styles, and compiles to <code>css/main.css</code>
-                </li>
-                <li>
-                  <code>_javascript/main.js</code> an ES6 JavaScript that compiles to <code>lib/main.js</code>
-                </li>
-              </ul>
-              <h3>Try it out!</h3>
-              <p>
-                To see if your setup works, follow these steps:
-              </p>
-              <ol>
-                <li>
+        <div class="columns is-variable is-6">
+          <div class="column is-4">
+            <h2 class="has-text-white title is-1 is-uppercase">Projetos</h2>
+          </div>
+          <div class="column is-8">
+            <ul class="accordion">
+              <li class="active">
+                <div class="columns mb-0 accordion-bt">
+                  <div class="column">
+                    <h3 class="has-text-white title is-2 mb-0">
+                      Um Treinador Nada Clássico
+                    </h3>
+                    <p class="is-size-3 mb-3">
+                      Longa em desenvolvimento com a Movioca
+                    </p>
+                  </div>
+                  <div class="column is-narrow accordion-icon">
+                    <div class="line h"></div>
+                    <div class="line v"></div>
+                  </div>
+                </div>
+                <div class="content mb-5">
+                  <h4 class="has-text-white title mb-0">Logline</h4>
                   <p>
-                    <strong>Move</strong> to this directory:
-                    <br>
-                    <pre><code>cd bulma-start</code></pre>
+                    Um treinador de futebol juvenil é convocado para conduzir um
+                    espetáculo de balé para não fecharem a sua escola. Sem nunca
+                    ter subido em um palco, ele mistura os esquemas táticos do
+                    campo com os passos de dança para ensinar uma equipe que não
+                    sabe nem amarrar as sapatilhas.
                   </p>
-                </li>
-                <li>
+                </div>
+              </li>
+              <li>
+                <div class="columns mb-0 accordion-bt">
+                  <div class="column">
+                    <h3 class="has-text-white title is-2 mb-0">
+                      Ana Não Escolhe Lado
+                    </h3>
+                    <p class="is-size-3 mb-3">
+                      Longa em desenvolvimento com a Elo Studios
+                    </p>
+                  </div>
+                  <div class="column is-narrow accordion-icon">
+                    <div class="line h"></div>
+                    <div class="line v"></div>
+                  </div>
+                </div>
+                <div class="content mb-5">
+                  <h4 class="has-text-white title mb-0">Logline</h4>
                   <p>
-                    <strong>Install</strong> all dependencies:
-                    <br>
-                    <pre><code>npm install</code></pre>
+                    Uma adolescente indecisa ganha o poder de experimentar duas
+                    realidades paralelas sempre que se vê diante de um dilema.
+                    Mas logo vai entender que viver duas vidas vai dobrar seus
+                    problemas.
                   </p>
-                </li>
-                <li>
+                  <h4 class="has-text-white title mb-0">Sinopse</h4>
                   <p>
-                    <strong>Start</strong> the CSS and JS watchers:
-                    <br>
-                    <pre><code>npm start</code></pre>
+                    Ana (16) é insegura. Fica tão indecisa escolhendo o que
+                    assistir na televisão que acaba assistindo ao catálogo da
+                    programação. Está louca por um romance, mas não sabe se
+                    aceita sair com o amigo fofo que está na dela ou se abre o
+                    jogo com o colega por quem tem uma queda. Pra piorar os dois
+                    são amigos! Na Feira das Profissões de seu colégio, não sabe
+                    se participa do grupo de Engenharia ou de Artes. E ainda
+                    recebe a notícia de que, com a separação de seus pais, tem
+                    que escolher com quem prefere morar.
                   </p>
-                </li>
-                <li>
                   <p>
-                    <strong>Edit</strong> <code>_sass/main.scss</code> by adding the following rule at the <strong>end</strong> of the file:
-                    <br>
-                    <pre><span style="color: #22863a;">html</span> {
-  <span style="color: #005cc5;"><span style="color: #005cc5;">background-color</span></span>: <span style="color: #24292e">$green</span>;
-}</pre>
+                    A essas alturas, a única coisa que não parece uma boa opção
+                    é o programa de aniversário com o qual a família a
+                    surpreende: um show de mágica. Ao ser convocada para um
+                    truque, a adolescente reluta em escolher uma carta do
+                    baralho. Como lição, o ilusionista realiza um passe de
+                    mágica que promete acabar com sua indecisão.
                   </p>
-                </li>
-              </ol>
-              <p>
-                The page background should turn <strong class="has-text-success">green</strong>!
-              </p>
-              <h3>Get started</h3>
-              <p>
-                You're <strong>ready</strong> to create your own designs with Bulma. Just edit or duplicate this page, or simply create a new one!
-                <br>
-                For example, this page is <strong>only</strong> built with the following <strong>Bulma elements</strong>:
-              </p>
-            </div>
-            <table class="table is-bordered is-fullwidth">
-              <thead>
-                <tr>
-                  <th>Type</th>
-                  <th>CSS class</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th>Columns</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/columns/basics">columns</a></code>
-                    <code><a href="http://bulma.io/documentation/columns/basics">column</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Layout</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/layout/section">section</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/container">container</a></code>
-                    <code><a href="http://bulma.io/documentation/layout/footer">footer</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Elements</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/elements/button">button</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/content">content</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">title</a></code>
-                    <code><a href="http://bulma.io/documentation/elements/title">subtitle</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Form</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/form/general">field</a></code>
-                    <code><a href="http://bulma.io/documentation/form/general">control</a></code>
-                  </td>
-                </tr>
-                <tr>
-                  <th>Helpers</th>
-                  <td>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-centered</a></code>
-                    <code><a href="http://bulma.io/documentation/modifiers/typography-helpers/">has-text-weight-semibold</a></code>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-            <div class="content">
-              <p>
-                If you want to <strong>learn more</strong>, follow these links:
-              </p>
-            </div>
-            <div class="field is-grouped">
-              <p class="control">
-                <a class="button is-medium is-primary" href="http://bulma.io">
-                  <strong class="has-text-weight-semibold">Bulma homepage</strong>
-                </a>
-              </p>
-              <p class="control">
-                <a class="button is-medium is-link" href="http://bulma.io/documentation/overview/start/">
-                  <strong class="has-text-weight-semibold">Documentation</strong>
-                </a>
-              </p>
-            </div>
+                  <p>
+                    No dia seguinte, Ana descobre que ganhou a capacidade de
+                    viver em duas realidades paralelas: em cada uma escolhe uma
+                    profissão para a feira, um amigo para sair e a casa de um de
+                    seus pais para morar. Mas isso vai acabar dobrando os seus
+                    problemas.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="columns mb-0 accordion-bt">
+                  <div class="column">
+                    <h3 class="has-text-white title is-2 mb-0">Rocheda</h3>
+                    <p class="is-size-3 mb-3">
+                      Série em desenvolvimento com a Giros Filmes
+                    </p>
+                  </div>
+                  <div class="column is-narrow accordion-icon">
+                    <div class="line h"></div>
+                    <div class="line v"></div>
+                  </div>
+                </div>
+                <div class="content mb-5">
+                  <h4 class="has-text-white title mb-0">Logline</h4>
+                  <p>
+                    A miúda cidade de Rocheda acordou diferente: foi
+                    teletransportada pra parte de cima do mundo e virou um
+                    “puxadinho” de Nova Iorque. Agora, o rochedense menos
+                    confiável de todos tenta desvendar o fenômeno enquanto a
+                    cidade pira com as consequências de sua nova geografia.
+                  </p>
+                  <p>
+                    Enquanto o noticiário se volta pro fenômeno, o mundo conhece
+                    rochedenses como Jessiquelen, uma influencer que finalmente
+                    vai ter seguidores; Cafuringa, um velho pescador que conta
+                    mentiras até falando sozinho e a cabeça fraca da prefeita
+                    Paulinha “Alto-falante” Cauduro. Mas é o extrapezista e
+                    atual trambiqueiro Raimundo Patativa que tenta desvendar
+                    esse salseiro com ajuda de Socorro, sua mãe superprotetora.
+                  </p>
+                  <p>
+                    Aos emboléus, a dupla vai proteger a cidade de incidentes
+                    diplomáticos, da máfia imobiliária e de turistas hipsters.
+                    De lutas em Chinatown a roubos de documentos na ONU, nosso
+                    herói e sua sidekick que não esquece o casaquinho vão
+                    arrudiar a Big Apple e provar que dá sim para plantar
+                    macaxeira no Central Park.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="columns mb-0 accordion-bt">
+                  <div class="column">
+                    <h3 class="has-text-white title is-2 mb-0">12/14</h3>
+                    <p class="is-size-3 mb-3">
+                      Projeto em desenvolvimento com a Tambellini Filmes
+                    </p>
+                  </div>
+                  <div class="column is-narrow accordion-icon">
+                    <div class="line h"></div>
+                    <div class="line v"></div>
+                  </div>
+                </div>
+                <div class="content mb-5">
+                  <h4 class="has-text-white title mb-0">Logline</h4>
+                  <p>
+                    Quando um relaxado instrutor de mergulho é contratado para a
+                    manutenção de uma plataforma de petróleo, ele encontra
+                    rotina e colegas rígidos, mas acaba descobrindo que o que
+                    cada um faz nos 14 dias de folga em terra firme pode
+                    complicar as coisas em alto mar.
+                  </p>
+                  <h4 class="has-text-white title mb-0">Sinopse</h4>
+                  <p>
+                    Junior é instrutor de mergulho, mas não poderia ser mais
+                    aéreo. Tanto que acaba demitido do centro de mergulho e,
+                    numa noite de bebedeira, se inscreve com informações falsas
+                    para trabalhar na plataforma de petróleo da maior empresa do
+                    país. Ao perceber que foi selecionado e que precisa de
+                    dinheiro, o jovem embarca no rígido mundo offshore: trabalha
+                    por 12 horas, 14 dias por mês, na manutenção da estrutura
+                    submersa, sem amigos, bebida ou celular.
+                  </p>
+                  <p>
+                    O jeito vai ser conhecer a tripulação, quebrar a seriedade
+                    do neurótico coordenador Juremilton, achar algo em comum com
+                    três mergulhadores que parecem uma boy band militar,
+                    amolecer a rabugenta doutora Matilda e quem sabe usar o
+                    poder legal do comandante Demétrio de casar tripulantes. O
+                    que cada um deles, inclusive Junior, faz nas duas semanas de
+                    folga em terra firme só vai ser possível saber aos poucos na
+                    plataforma. Mas vai comprometer o convívio da equipe, a
+                    segurança da costa brasileira e a especulação internacional
+                    sobre o petróleo.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <div class="columns mb-0 accordion-bt">
+                  <div class="column">
+                    <h3 class="has-text-white title is-2 mb-0">
+                      Próxima Parada
+                    </h3>
+                    <p class="is-size-3 mb-3">
+                      Projeto em desenvolvimento com a Primeiro Corte
+                    </p>
+                  </div>
+                  <div class="column is-narrow accordion-icon">
+                    <div class="line h"></div>
+                    <div class="line v"></div>
+                  </div>
+                </div>
+                <div class="content mb-5">
+                  <h4 class="has-text-white title mb-0">Logline</h4>
+                  <p>
+                    Aerotrem é uma comédia que retoma trinta anos de burocracia
+                    ao apresentar a trajetória profissional quase completa de
+                    seis concursados e sua repartição pública, encarregada de um
+                    projeto que literalmente não decola.
+                  </p>
+                  <h4 class="has-text-white title mb-0">Sinopse</h4>
+                  <p>
+                    Cada episódio transita entre quatro datas (1978, 1988, 1998
+                    e 2008), nas quais podemos ver a história do Aerotrem, do
+                    Brasil e dos seis protagonistas. Se em 78, temos um Geraldo
+                    empolgado para conquistar o mundo e um minuto a sós com
+                    Bete, em 98 surge sua versão barriguda e amassada, que se
+                    arrasta até o escritório com a única motivação de assistir à
+                    Copa em uma TV maior. A Rita de 88 está exausta, sugada por
+                    um trabalho que não compensa e por um bebê que morde seu
+                    mamilo, apenas para ressaltar a Rita modelo 08,
+                    quase-aposentada e toda-empoderada, mas sem vergonha de
+                    mamar nas tetas do governo e de seu segundo marido. Enquanto
+                    isso, Chico pouco produz e perde tempo investigando se
+                    Duarte era um espião do AI-5 em 78, descobrindo mensagens
+                    satânicas do hit Ilariê em 88, ou temendo o Bug do Milênio
+                    em 98 e os cânceres transmitidos por iPhones em 08. Tudo
+                    isso se resume nas palavras do ativista de 78 e almofadinha
+                    de 08 Juscelino, sempre capaz de identificar uma “puta
+                    sacanagem” e concluir que “O Brasil é o país do futuro. Do
+                    futuro do pretérito.”
+                  </p>
+                </div>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     <footer class="footer has-text-centered">
       <div class="container">
-         <div class="columns">
+        <div class="columns">
           <div class="column is-8-desktop is-offset-2-desktop">
             <p>
               <strong class="has-text-weight-semibold">
-                <a href="https://www.npmjs.com/package/bulma-start">bulma-start@0.0.5</a>
+                <a href="https://www.npmjs.com/package/bulma-start"
+                  >bulma-start@0.0.5</a
+                >
               </strong>
             </p>
             <p>
               <small>
-                Source code licensed <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
+                Source code licensed
+                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>
               </small>
             </p>
-            <p style="margin-top: 1rem;">
+            <p style="margin-top: 1rem">
               <a href="http://bulma.io">
-                <img src="made-with-bulma.png" alt="Made with Bulma" width="128" height="24">
+                <img
+                  src="made-with-bulma.png"
+                  alt="Made with Bulma"
+                  width="128"
+                  height="24"
+                />
               </a>
             </p>
           </div>
