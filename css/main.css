@@ -10301,7 +10301,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .footer {
-  background-color: hsl(0deg, 0%, 98%);
+  background-color: #e7c797;
   padding: 3rem 1.5rem 6rem;
 }
 
@@ -10311,7 +10311,7 @@ header {
 }
 
 h1 {
-  font-size: 4em !important;
+  font-size: 7rem !important;
   line-height: 70% !important;
 }
 
@@ -10395,11 +10395,28 @@ ul.accordion li {
   transform: rotate(90deg);
 }
 
+footer h2 {
+  margin-bottom: 0.5em !important;
+}
+
 .border-shadow {
   border: 2px #000000 solid;
   box-shadow: 6px 6px #000000;
 }
 
 .button {
-  padding-top: calc(0.3em - 1px);
+  font-size: 1.8em !important;
+  border-radius: 0;
+}
+
+.button img {
+  width: 1em;
+}
+
+.button.is-yellow {
+  background-color: #febb24;
+}
+
+.field.is-grouped > .control:not(:last-child) {
+  margin-right: 2em;
 }
