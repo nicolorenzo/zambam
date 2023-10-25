@@ -297,7 +297,7 @@ th:not([align]) {
 }
 
 html {
-  background-color: #e7c797;
+  background-color: #e6ceaa;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -10301,13 +10301,8 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .footer {
-  background-color: #e7c797;
+  background-color: #e6ceaa;
   padding: 3rem 1.5rem 6rem;
-}
-
-header {
-  background: url("../images/bg.svg") repeat-x center center;
-  background-size: auto 100%;
 }
 
 h1 {
@@ -10320,24 +10315,50 @@ h2 {
   line-height: 70% !important;
 }
 
-.profile-picture {
-  position: relative;
+.has-background-yellow {
+  background-color: #febb24;
 }
 
-.profile-picture .wrapper {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: inherit;
+.has-background-orange {
+  background-color: #fb692d;
 }
 
-#projetos {
+.has-background-red {
+  background-color: #fa2735;
+}
+
+.has-background-coral {
+  background-color: #b91d3d;
+}
+
+.has-background-purple {
   background-color: #671e54;
 }
 
 ul.accordion li {
-  border-bottom: 2px solid #ffffff;
-  margin-bottom: 1rem;
+  padding: 2em;
+}
+
+ul.accordion li {
+  cursor: pointer;
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+ul.accordion li:before {
+  content: "";
+  display: block;
+  background-color: rgba(0, 0, 0, 0) !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease;
+}
+
+ul.accordion li:hover:before {
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 .accordion .content {
@@ -10346,11 +10367,6 @@ ul.accordion li {
 
 .accordion .active .content {
   display: block;
-}
-
-.accordion-bt {
-  cursor: pointer;
-  transition: all 0.5s ease;
 }
 
 .accordion-icon {
@@ -10369,16 +10385,16 @@ ul.accordion li {
   transition: all 0.5s ease;
 }
 
+.has-background-yellow .accordion-icon .line {
+  border: 1px solid hsl(0deg, 0%, 4%);
+}
+
 .line.h {
   transform: rotate(0deg);
 }
 
 .line.v {
   transform: rotate(90deg);
-}
-
-.accordion-bt:hover {
-  background-color: rgba(0, 0, 0, 0.3098039216);
 }
 
 .accordion-bt:hover .accordion-icon,
