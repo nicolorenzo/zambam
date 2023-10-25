@@ -297,7 +297,7 @@ th:not([align]) {
 }
 
 html {
-  background-color: #e6ceaa;
+  background-color: #f7e6cd;
   font-size: 16px;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -10301,7 +10301,7 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
 }
 
 .footer {
-  background-color: #e6ceaa;
+  background-color: #f7e6cd;
   padding: 3rem 1.5rem 6rem;
 }
 
@@ -10336,7 +10336,7 @@ h2 {
 }
 
 ul.accordion li {
-  padding: 2em;
+  padding: 2em 0;
 }
 
 ul.accordion li {
@@ -10385,8 +10385,9 @@ ul.accordion li:hover:before {
   transition: all 0.5s ease;
 }
 
-.has-background-yellow .accordion-icon .line {
-  border: 1px solid hsl(0deg, 0%, 4%);
+.has-background-yellow .accordion-icon .line,
+.has-background-orange .accordion-icon .line {
+  border: 1px solid hsl(0deg, 0%, 21%);
 }
 
 .line.h {
@@ -10412,8 +10413,8 @@ footer h2 {
 }
 
 .border-shadow {
-  border: 2px #000000 solid;
-  box-shadow: 6px 6px #000000;
+  border: 2px hsl(0deg, 0%, 21%) solid;
+  box-shadow: 6px 6px hsl(0deg, 0%, 21%);
 }
 
 .button {
@@ -10436,30 +10437,21 @@ footer h2 {
   margin-bottom: 1.5rem;
 }
 
+.profile-picture {
+  width: 13rem !important;
+}
+
 @media screen and (max-width: 768px) {
   h1 {
     font-size: 5rem !important;
   }
 
   .profile-picture {
-    width: 13rem !important;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 499px) {
   .buttons .button:not(:last-child):not(.is-fullwidth) {
     margin-right: 1.5rem;
-  }
-
-  .picture-name {
-    flex-wrap: wrap !important;
-  }
-
-  .name {
-    width: 100% !important;
-  }
-
-  .profile-picture .wrapper {
-    position: relative;
-    padding: unset;
   }
 }

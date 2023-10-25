@@ -16,7 +16,7 @@ $orange: #fb692d;
 $purple: #671e54;
 $red: #fa2735;
 $coral: #b91d3d;
-$bege: #e6ceaa;
+$bege: #f7e6cd;
 // Update the sans-serif font family
 $family-sans-serif: 'Darker Grotesque', 'Helvetica', 'Arial', sans-serif;
 
@@ -56,7 +56,7 @@ h2 {
 }
 
 ul.accordion li {
-  padding: 2em;
+  padding: 2em 0;
 }
 ul.accordion li {
   cursor: pointer;
@@ -97,8 +97,9 @@ ul.accordion li:hover:before {
   position: absolute;
   transition: all 0.5s ease;
 }
-.has-background-yellow .accordion-icon .line {
-  border: 1px solid $black;
+.has-background-yellow .accordion-icon .line,
+.has-background-orange .accordion-icon .line {
+  border: 1px solid $dark;
 }
 .line.h {
   transform: rotate(0deg);
@@ -120,8 +121,8 @@ footer h2 {
 }
 
 .border-shadow {
-  border: 2px #000000 solid;
-  box-shadow: 6px 6px #000000;
+  border: 2px $dark solid;
+  box-shadow: 6px 6px $dark;
 }
 .button {
   border-radius: 0;
@@ -138,27 +139,20 @@ footer h2 {
 .buttons .button {
   margin-bottom: 1.5rem;
 }
+.profile-picture {
+  width: 13rem !important;
+}
 
 @include mobile {
   h1 {
     font-size: 5rem !important;
   }
   .profile-picture {
-    width: 13rem !important;
+    margin: 0 auto;
   }
 }
 @include until(500px) {
   .buttons .button:not(:last-child):not(.is-fullwidth) {
     margin-right: 1.5rem;
-  }
-  .picture-name {
-    flex-wrap: wrap !important;
-  }
-  .name {
-    width: 100% !important;
-  }
-  .profile-picture .wrapper {
-    position: relative;
-    padding: unset;
   }
 }
